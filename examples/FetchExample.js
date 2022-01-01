@@ -96,7 +96,7 @@ var Product = {
   getProducts: getProducts
 };
 
-var FailedRequest = Caml_exceptions.create("FetchExample.FailedRequest");
+var FailedRequest = /* @__PURE__ */Caml_exceptions.create("FetchExample.FailedRequest");
 
 $$Promise.$$catch(login("emma.wong@reqres.in", "pw").then(function (ret) {
             if (ret.TAG !== /* Ok */0) {

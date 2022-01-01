@@ -4,7 +4,7 @@
 var Curry = require("bs-platform/lib/js/curry.js");
 var Caml_exceptions = require("bs-platform/lib/js/caml_exceptions.js");
 
-var JsError = Caml_exceptions.create("Promise.JsError");
+var JsError = /* @__PURE__ */Caml_exceptions.create("Promise.JsError");
 
 function $$catch(promise, callback) {
   return promise.catch(function (err) {

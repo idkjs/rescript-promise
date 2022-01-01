@@ -8,7 +8,7 @@ var $$Promise = require("../src/Promise.js");
 var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
 var Caml_exceptions = require("bs-platform/lib/js/caml_exceptions.js");
 
-var TestError = Caml_exceptions.create("PromiseTest.TestError");
+var TestError = /* @__PURE__ */Caml_exceptions.create("PromiseTest.TestError");
 
 var fail = Js_exn.raiseError;
 
